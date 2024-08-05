@@ -12,7 +12,7 @@ public class Patient extends Person {
     private List<Prescription> prescriptions;
 
 
-    public Patient(String id,String name, String dob, String email, String gender, String address, String contactNo, String medicalHistory, String insuranceDetails, String prescriptions) {
+    public Patient(String id,String name, String dob, String email, String gender, String address, String contactNo, String medicalHistory, String insuranceDetails) {
         super(id, name, dob, email, gender, address, contactNo);
         this.medicalHistory = medicalHistory;
         this.insuranceDetails = insuranceDetails;
