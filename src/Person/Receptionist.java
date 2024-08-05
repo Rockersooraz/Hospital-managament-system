@@ -4,8 +4,8 @@ public class Receptionist extends Person {
 
     private String assignedDepartment;
 
-    public Receptionist(String name, String sex, String dob, String email, String gender, String address, String contactNo, String assignedDepartment) {
-        super(name, sex, dob, email, gender, address, contactNo);
+    public Receptionist(String id,String name, String dob, String email, String gender, String address, String contactNo, String assignedDepartment) {
+        super(id, name, dob, email, gender, address, contactNo);
         this.assignedDepartment = assignedDepartment;
     }
 

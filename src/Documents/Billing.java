@@ -1,3 +1,5 @@
+package Documents;
+
 import Person.Patient;
 
 public class Billing {

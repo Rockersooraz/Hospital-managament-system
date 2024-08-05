@@ -1,3 +1,5 @@
+package Documents;
+
 public class Insurance {
 
     private String insuranceId;

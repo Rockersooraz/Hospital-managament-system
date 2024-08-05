@@ -1,3 +1,5 @@
+package Documents;
+
 public class Payment {
 
     private String paymentId;

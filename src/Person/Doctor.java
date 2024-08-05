@@ -6,8 +6,8 @@ public class Doctor extends Person {
     private String department;
     private String type;
 
-    public Doctor(String name, String sex, String dob, String email, String gender, String address, String contactNo, String doctorId, String speciality, String department, String type) {
-        super(name, sex, dob, email, gender, address, contactNo);
+    public Doctor(String id,String name, String dob, String email, String gender, String address, String contactNo, String doctorId, String speciality, String department, String type) {
+        super(id,name, dob, email, gender, address, contactNo);
         this.specialization = speciality;
         this.department = department;
         this.type = type;
@@ -37,4 +37,5 @@ public class Doctor extends Person {
     public void setType(String type) {
         this.type = type;
     }
+
 }

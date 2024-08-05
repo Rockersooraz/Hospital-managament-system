@@ -1,18 +1,22 @@
 package Person;
+import Documents.Prescription;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Patient extends Person {
 
 
     private String medicalHistory;
     private String insuranceDetails;
-    private String prescriptions;
+    private List<Prescription> prescriptions;
 
 
-    public Patient(String name, String sex, String dob, String email, String gender, String address, String contactNo, String medicalHistory, String insuranceDetails, String prescriptions) {
-        super(name, sex, dob, email, gender, address, contactNo);
+    public Patient(String id,String name, String dob, String email, String gender, String address, String contactNo, String medicalHistory, String insuranceDetails, String prescriptions) {
+        super(id, name, dob, email, gender, address, contactNo);
         this.medicalHistory = medicalHistory;
         this.insuranceDetails = insuranceDetails;
-        this.prescriptions = prescriptions;
+        this.prescriptions = new ArrayList<>();
     }
 
     public String getMedicalHistory() {
@@ -31,12 +35,12 @@ public class Patient extends Person {
         this.insuranceDetails = insuranceDetails;
     }
 
-    public String getPrescriptions() {
+    public List<Prescription> getPrescriptions() {
         return prescriptions;
     }
 
-    public void setPrescriptions(String prescriptions) {
-        this.prescriptions = prescriptions;
+    public void setPrescriptions(Prescription prescriptions) {
+        this.prescriptions.add(prescriptions);
     }
 
 }

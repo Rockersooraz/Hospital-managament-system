@@ -5,8 +5,8 @@ public class Nurse extends Person {
     private String assignedDepartment;
     private String assignedPatients;
 
-    public Nurse(String name, String sex, String dob, String email, String gender, String address, String contactNo, String assignedDepartment, String assignedPatients) {
-        super(name, sex, dob, email, gender, address, contactNo);
+    public Nurse(String id,String name, String dob, String email, String gender, String address, String contactNo, String assignedDepartment, String assignedPatients) {
+        super(id,name, dob, email, gender, address, contactNo);
         this.assignedDepartment = assignedDepartment;
         this.assignedPatients = assignedPatients;
     }
