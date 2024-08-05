@@ -43,6 +43,14 @@ public class Patient extends Person {
         this.prescriptions.add(prescriptions);
     }
 
+    @Override
+    public void displayDetails() {
+        System.out.println("Patient ID" + getId() );
+        System.out.println("Patient Name" + getName() );
+        System.out.println("Patient ID" + getEmail());
+        System.out.println("Patient Gender" + getGender());
+    }
+
 }
 
 

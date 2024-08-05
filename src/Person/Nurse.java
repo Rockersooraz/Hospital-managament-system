@@ -27,7 +27,11 @@ public class Nurse extends Person {
         this.assignedPatients = assignedPatients;
     }
 
-    public void assistDoctor(){
-
+    @Override
+    public void displayDetails() {
+        System.out.println("Nurse ID" + getId() );
+        System.out.println("Nurse Name" + getName() );
+        System.out.println("Nurse ID" + getEmail());
+        System.out.println("Nurse Gender" + getGender());
     }
 }

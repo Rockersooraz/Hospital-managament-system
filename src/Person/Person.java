@@ -57,9 +57,6 @@ public class Person {
         this.name = name;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
 
     public void setDob(String dob) {
         this.dob = dob;

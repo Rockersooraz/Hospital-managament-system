@@ -38,4 +38,12 @@ public class Doctor extends Person {
         this.type = type;
     }
 
+    @Override
+    public void displayDetails() {
+        System.out.println("Doctor ID" + getId() );
+        System.out.println("Doctor Name" + getName() );
+        System.out.println("Doctor ID" + getEmail());
+        System.out.println("Doctor Gender" + getGender());
+    }
+
 }

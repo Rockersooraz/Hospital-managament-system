@@ -16,4 +16,12 @@ public class Receptionist extends Person {
     public void setAssignedDepartment(String assignedDepartment) {
         this.assignedDepartment = assignedDepartment;
     }
+
+    @Override
+    public void displayDetails() {
+        System.out.println("Doctor ID" + getId() );
+        System.out.println("Doctor Name" + getName() );
+        System.out.println("Doctor ID" + getEmail());
+        System.out.println("Doctor Gender" + getGender());
+    }
 }
