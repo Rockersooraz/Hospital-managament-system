@@ -1,6 +1,6 @@
-package Employee;
+package Person;
 
-public class Employee {
+public class Person {
 
     private String name;
     private String sex;
@@ -10,7 +10,7 @@ public class Employee {
     private String address;
     private String contactNo;
 
-    public Employee(String name, String sex, String dob, String email, String gender, String address, String contactNo) {
+    public Person(String name, String sex, String dob, String email, String gender, String address, String contactNo) {
         this.name = name;
         this.sex = sex;
         this.dob = dob;

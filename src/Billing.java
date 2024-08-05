@@ -1,22 +1,43 @@
+import Person.Patient;
+
 public class Billing {
 
-    private String amount;
+    private String billId;
+    private Patient patient;
+    private String totalAmount;
     private String billingDate;
+    private String payment;
 
-    private String paymentMethod;
-
-    public Billing(String amount, String billingDate, String paymentMethod) {
-        this.amount = amount;
+    public Billing(String billId, Patient patient, String totalAmount, String billingDate, String payment) {
+        this.billId = billId;
+        this.patient = patient;
+        this.totalAmount = totalAmount;
         this.billingDate = billingDate;
-        this.paymentMethod = paymentMethod;
+        this.payment = payment;
     }
 
-    public String getAmount() {
-        return amount;
+    public String getBillId() {
+        return billId;
     }
 
-    public void setAmount(String amount) {
-        this.amount = amount;
+    public void setBillId(String billId) {
+        this.billId = billId;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public String getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(String totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
     public String getBillingDate() {
@@ -27,11 +48,11 @@ public class Billing {
         this.billingDate = billingDate;
     }
 
-    public String getPaymentMethod() {
-        return paymentMethod;
+    public String getPayment() {
+        return payment;
     }
 
-    public void setPaymentMethod(String paymentMethod) {
-        this.paymentMethod = paymentMethod;
+    public void setPayment(String payment) {
+        this.payment = payment;
     }
 }

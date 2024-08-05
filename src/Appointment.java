@@ -1,15 +1,20 @@
+import Person.Doctor;
+import Person.Patient;
+
 public class Appointment {
 
     private String appointmentId;
+    private Patient patient;
+    private Doctor doctor;
     private String appointmentdate;
-    private String appointmentTime;
-    private String appointmentReason;
+    private String status;
 
-    public Appointment(String appointmentId, String appointmentdate, String appointmentTime, String appointmentReason) {
+    public Appointment(String appointmentId, Patient patient, Doctor doctor, String appointmentdate, String status) {
         this.appointmentId = appointmentId;
+        this.patient = patient;
+        this.doctor = doctor;
         this.appointmentdate = appointmentdate;
-        this.appointmentTime = appointmentTime;
-        this.appointmentReason = appointmentReason;
+        this.status = status;
     }
 
     public String getAppointmentId() {
@@ -20,6 +25,22 @@ public class Appointment {
         this.appointmentId = appointmentId;
     }
 
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
     public String getAppointmentdate() {
         return appointmentdate;
     }
@@ -28,19 +49,13 @@ public class Appointment {
         this.appointmentdate = appointmentdate;
     }
 
-    public String getAppointmentTime() {
-        return appointmentTime;
+    public String getStatus() {
+        return status;
     }
 
-    public void setAppointmentTime(String appointmentTime) {
-        this.appointmentTime = appointmentTime;
-    }
-
-    public String getAppointmentReason() {
-        return appointmentReason;
-    }
-
-    public void setAppointmentReason(String appointmentReason) {
-        this.appointmentReason = appointmentReason;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
+
+
